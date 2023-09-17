@@ -3,7 +3,7 @@
 # TERMUX APACHE MARIADB PHP WEBSERVER
 
 check_Packages() {
-for i in apache2 mariadb php php-apache phpmyadmin; do
+for i in apache2 mariadb composer php php-apache phpmyadmin; do
 	dpkg -s $i &> /dev/null
 	if [[ $? -eq 0 ]]; then
 		echo -e "\e[1;34m[\e[\e[1;92m+\e[1;34m]\e[1;92m${i}\e[0m is Installed"
@@ -15,7 +15,7 @@ for i in apache2 mariadb php php-apache phpmyadmin; do
 done
 }
 install_Packages() {
-for i in apache2 mariadb php php-apache phpmyadmin; do
+for i in apache2 mariadb composer php php-apache phpmyadmin; do
 	dpkg -s $i &> /dev/null
 	if [[ $? -eq 0 ]]; then
 		echo ""
