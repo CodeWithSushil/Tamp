@@ -17,9 +17,7 @@ Tamp is use MariaDb the old MySQL server is also included PhpMyAdmin feature.<br
  </ul>
  
  <h4>Installation:</h4><hr>
- ```bash
  git clone https://github.com/codewithsushil/tamp.git
- ```
  cd Tamp <br>
  bash install.sh<br>
  
